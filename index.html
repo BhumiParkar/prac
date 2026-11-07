@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Journal | Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="#" class="logo">The Daily<span>Journal.</span></a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#blogs">Explore</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <a href="#newsletter" class="nav-button">Subscribe ↗</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">WELCOME TO THE DAILY JOURNAL</p>
+            <h1>Ideas worth<br><span>sharing.</span></h1>
+            <p class="hero-description">
+                Discover stories, explore new ideas and find inspiration
+                for everyday life. A little something for every curious mind.
+            </p>
+            <a href="#blogs" class="primary-button">Explore Articles ↗</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1000"
+                 alt="Notebook and workspace">
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <main class="blog-section" id="blogs">
+
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">OUR LATEST STORIES</p>
+                <h2>Explore the journal.</h2>
+            </div>
+            <p>Fresh perspectives for curious minds.</p>
+        </div>
+
+        <!-- Search -->
+        <div class="search-box">
+            <span>⌕</span>
+            <input type="text" id="searchInput"
+                   placeholder="Search articles...">
+        </div>
+
+        <!-- Categories -->
+        <div class="categories" id="categories">
+            <button class="category active" data-category="All">All</button>
+            <button class="category" data-category="Technology">Technology</button>
+            <button class="category" data-category="Lifestyle">Lifestyle</button>
+            <button class="category" data-category="Education">Education</button>
+            <button class="category" data-category="Travel">Travel</button>
+        </div>
+
+        <!-- Blog Cards -->
+        <div class="blog-grid" id="blogGrid"></div>
+
+        <p class="no-results" id="noResults" hidden>
+            No articles found. Try another search.
+        </p>
+    </main>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <p class="eyebrow">A LITTLE ABOUT US</p>
+        <h2>Stories make the world more interesting.</h2>
+        <p>
+            The Daily Journal is a place for ideas, knowledge and inspiration.
+            We share articles about technology, lifestyle, education and travel
+            to help readers learn something new every day.
+        </p>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter" id="newsletter">
+        <p class="eyebrow">STAY CONNECTED</p>
+        <h2>Good reads, delivered to you.</h2>
+        <p>Subscribe to receive our latest stories and updates.</p>
+
+        <form id="newsletterForm">
+            <input type="email" id="emailInput"
+                   placeholder="Enter your email address" required>
+            <button type="submit">Subscribe ↗</button>
+        </form>
+
+        <p id="message"></p>
+    </section>
+
+    <!-- Article Modal -->
+    <div class="modal" id="articleModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">×</button>
+            <div id="articleContent"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#" class="logo">The Daily<span>Journal.</span></a>
+        <p>© 2026 The Daily Journal. All rights reserved.</p>
+        <p>Made with curiosity and creativity.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
