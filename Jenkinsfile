@@ -39,3 +39,4 @@ pipeline {
         }
     }
 }
+<arguments>-Xrs -Xmx256m -Dhudson.lifecycle=hudson.lifecycle.WindowsServiceLifecycle -Dhudson.plugins.git.GitSCM.ALLOW_LOCAL_CHECKOUT=true -jar "%BASE%\jenkins.war" --httpPort=8080 --webroot="%ProgramData%\Jenkins\war"</arguments>
